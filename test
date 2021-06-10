@@ -1,0 +1,8 @@
+U_SN<Int> := 0
+U_Count<Int> := 1
+While :.{Name}@{U_Count}.PID > Imp(.001) Do
+    IF   ABS(y - :.{Name}@{U_Count}.y) < 1mm Then
+    End If
+    U_Count<Int> += 1
+End While
+U_Count<Int> -= 1
